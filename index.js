@@ -1,27 +1,3 @@
-//Header lists
-let myHome = document.querySelector(".home");
-let myCategories = document.querySelector(".categories");
-let myHomeLists = document.querySelector(".home-ul");
-let myCategoriesLists = document.querySelector(".categories-ul");
-let myHtml = document.getElementsByTagName("html")[0];
-
-myHtml.addEventListener("mouseover", (e) => {
-  if (e.target === myHome || e.target === myHomeLists) {
-    myHomeLists.style.display = "block";
-  } else {
-    myHomeLists.style.display = "none";
-  };
-});
-
-myHtml.addEventListener("mouseover", (e) => {
-  if (e.target === myCategories || e.target === myCategoriesLists) {
-    myCategoriesLists.style.display = "block";
-  } else {
-    myCategoriesLists.style.display = "none";
-  };
-});
-//Header lists
-
 //Header Scroll
 let header = document.querySelector(".header");
 window.addEventListener("scroll", () => {

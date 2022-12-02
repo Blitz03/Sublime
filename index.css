@@ -26,6 +26,7 @@ body {
 .header .lists ul {
   display: flex;
   gap: 50px;
+  transition: .2s;
 }
 .header .lists ul li {
   position: relative;
@@ -46,9 +47,9 @@ body {
 }
 .header .lists .inside-ul{
   display: block;
-  margin-top: 40px;
   position: absolute;
-  top: 12px;
+  top: 30px;
+  left: -20px;
 }
 .header .lists .inside-ul li {
   padding: 10px;
@@ -57,6 +58,7 @@ body {
   background-color: white;
   text-align: center;
   padding-bottom: 15px;
+  transition: .2s;
 }
 .header .lists .inside-ul li a {
   font-size: 13px;
@@ -66,11 +68,21 @@ body {
 .header .lists .inside-ul li a:hover {
   color: #1b1b1b;
 }
-.header .lists .inside-ul.home-ul {
-  display: none;
+.header .lists ul li .inside-ul.home-ul {
+  opacity: 0;
+  visibility: hidden;
+}
+.header .lists ul li.home-list:hover .inside-ul{
+  opacity: 1;
+  visibility: visible;
 }
 .header .lists .inside-ul.categories-ul {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.header .lists .categories-list:hover .categories-ul {
+  opacity: 1;
+  visibility: visible;
 }
 .header .lists .home {
   color: #1b1b1b;
